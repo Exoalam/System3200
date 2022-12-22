@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Retrieve</title>
+{% endblock %}
+
+{% block body %}
+<div id="retrieve_panel">
+    <div id="retrieve_nav">
+        <input type="submit" value="" style="background-image: url(../static/image/folder.png);"/>
+        <input type="submit" value="" style="background-image: url(../static/image/trash.png);"/>
+    </div>
+    <div style="display: flex; flex-direction: column; width: 100%; height: 100%;">
+        <div id="explorer">
+            <div style="height: 100%; width: 50%; border-right: #222831 solid; border-width: 2px;" id="wanttoret"></div>
+            <div style="height: 100%; width: 50%;" id="readytoret"></div>
+        </div>
+        <div id="retrieve_button" style="width: 99%; margin: auto; height: 50px;">
+            <input type="submit" value="Restore"/>
+            <input type="submit" value="Download"/>
+        </div>
+    </div>
+</div>
+{% endblock %}

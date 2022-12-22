@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #393E46;
+}
+
+#icon {
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#nav {
+    width: 100%;
+    background-color: #222831;
+    display: flex;
+    flex-direction: row;
+}
+#nav_list {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+}
+
+#nav_list a {
+    all: unset;
+    padding: 50px;
+    margin: auto;
+    color: #EEEEEE;
+    font-size: 24px;
+}
+
+#nav_list a:hover {
+    color: #00c3ff;
+    text-decoration: underline;
+}
+
+#nav_list a:hover:active {
+    color: #EEEEEE;
+    text-decoration: underline;
+}
+
+#homepage_blocks{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 100px;
+    left: 350px;
+}
+#homepage_blocks .eblock {
+    height: 170px;
+    width: 130px;
+    background-color: #00c3ffaf;
+    margin-left: 50px;
+    padding: 50px;
+    color: #EEEEEE;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#store_panel {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 600px;
+    width: 800px;
+    background-color: #222831;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#store_button {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: #00c3ff solid;
+    border-width: 1px;
+}
+
+#store_button input{
+    all: unset;
+    color: #222831;
+    background-color: #00c3ff;
+    font-size: 16px;
+    margin-right: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 1px;
+}
+
+#store_button input:hover{
+    color: #00c3ff;
+    background-color: #393E46;
+}
+
+#store_button input:hover:active{
+    color: #222831;
+    background-color: #00c3ff;
+}
+
+#store_dialog {
+    margin: auto;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    color: #EEEEEE;
+    font-size: 32px;
+}
+
+#retrieve_panel {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 800px;
+    width: 1200px;
+    background-color: #222831;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#retrieve_nav {
+    border-right: #00c3ff solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+#retrieve_nav input{
+    all: unset;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    width: 45px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#retrieve_nav input:hover{
+    background-color: #393E46;
+}
+
+#retrieve_nav input:focus{
+    background-color: #00c3ff;
+}
+
+#explorer {
+    width: 99%;
+    height: 92%;
+    background-color: #393E46;
+    border: #222831 solid;
+    border-width: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#retrieve_button input{
+    all: unset;
+    margin-left: 310px;
+    padding: 15px;
+    color: #222831;
+    background-color: #00c3ff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#retrieve_button input:hover{
+    color: #00c3ff;
+    background-color: #393E46;
+}
+
+#retrieve_button input:hover:active{
+    color: #222831;
+    background-color: #00c3ff;
+}
+
+#login_panel {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    height: 600px;
+    width: 400px;
+    background-color: #222831;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#login_panel .textfield{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#login_panel .textfield input{
+    all: unset;
+    width: 250px;
+    color: #EEEEEE;
+    border-bottom: #00c3ff solid;
+    border-width: 1px;
+}
+
+#login_button {
+    margin: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#login_button input{
+    all: unset;
+    color: #222831;
+    background-color: #00c3ff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#login_button input:hover{
+    color: #00c3ff;
+    background-color: #393E46;
+}
+
+#login_button input:hover:active{
+    color: #222831;
+    background-color: #00c3ff;
+}
+
+#login_button a{
+    all: unset;
+    color: #222831;
+    background-color: #00c3ff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#login_button a:hover{
+    color: #00c3ff;
+    background-color: #393E46;
+}
+
+#login_button a:hover:active{
+    color: #222831;
+    background-color: #00c3ff;
+}
+
+#sign_panel {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    height: 600px;
+    width: 400px;
+    background-color: #222831;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#sign_panel .textfield{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#sign_panel .textfield input{
+    all: unset;
+    width: 250px;
+    color: #EEEEEE;
+    border-bottom: #00c3ff solid;
+    border-width: 1px;
+}
+
+#sign_button {
+    margin: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#sign_button input{
+    all: unset;
+    color: #222831;
+    background-color: #00c3ff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#sign_button input:hover{
+    color: #00c3ff;
+    background-color: #393E46;
+}
+
+#sign_button input:hover:active{
+    color: #222831;
+    background-color: #00c3ff;
+}

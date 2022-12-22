@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Signup</title>
+{% endblock %}
+
+{% block body %}
+<div id="sign_panel">
+    <label style="margin-left: auto;margin-right: auto;margin-top: 150px; margin-bottom: 100px;color: #00c3ff; font-size: 32px; font-weight: bold;">Signup</label>
+    <div id="sign_user" class="textfield"><input type="text" placeholder="Type Your Email"></div>
+    <div id="sign_pass" class="textfield"><input type="text" placeholder="Type Your Password"></div>
+    <div id="sign_pass" class="textfield"><input type="text" placeholder="Retype Your Password"></div>
+    <div id="sign_button">
+        <input type="submit" value="Create Account"/>
+    </div>
+</div>
+{% endblock %}

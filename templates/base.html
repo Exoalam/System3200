@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div id="nav">
+        <div><img id="icon" src="../static/image/data-storage.png"></div>
+        <h4 style="color: #EEEEEE;">ESRGAN Store</h4>
+        <div id="nav_list">
+            <br>
+            <a href="/">Home</a>
+            <a href="/store">Store</a>
+            <a href="/retrieve">Retrieve</a>
+            <a href="/login">Login</a>
+        </div>
+    </div>
+    {% block body %}{% endblock %}
+</body>
+</html>

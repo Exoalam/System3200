@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Store</title>
+{% endblock %}
+
+{% block body %}
+<div id="store_panel">
+    <div id="store_button">
+        <input type="submit" value="Store"/>
+        <input type="submit" value="Browse"/>
+    </div>
+    <div id="store_dialog"><img style="filter: invert(1);height: 80xp; width: 80px;" src="../static/image/image.svg"><br>Drag & Drop Image</div>
+</div>
+{% endblock %}
