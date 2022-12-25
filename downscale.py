@@ -11,6 +11,6 @@ class Downscale():
                     filepath = os.path.join(root, filename)
                     image = pyplot.imread(filepath)
                     if len(image.shape) > 2:
-                        image_resized = resize(image, (1024, 1024))
+                        image_resized = resize(image, (512, 512))
                         dwn1 = resize(image_resized, (256, 256))
                         pyplot.imsave('Storage/' + filename,dwn1)

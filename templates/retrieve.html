@@ -15,10 +15,10 @@
             <div style="height: 100%; width: 50%; border-right: #222831 solid; border-width: 2px;" id="wanttoret"></div>
             <div style="height: 100%; width: 50%;" id="readytoret"></div>
         </div>
-        <div id="retrieve_button" style="width: 99%; margin: auto; height: 50px;">
-            <input type="submit" value="Restore"/>
+        <form action="/retrieve" method="post" id="retrieve_button" style="width: 99%; margin: auto; height: 50px;">
+            <input type="submit" value="Restore" name="Restore"/>
             <input type="submit" value="Download"/>
-        </div>
+        </form>
     </div>
 </div>
 {% endblock %}

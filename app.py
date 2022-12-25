@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for, request
 from flask_dropzone import Dropzone
 from model import RRDBNet
 from downscale import Downscale
+from Generate import Generate
 import os
 
 app = Flask(__name__)
@@ -19,8 +20,11 @@ def upload():
 @app.route('/')
 def index():
     return render_template('index.html')
-@app.route('/retrieve')
+@app.route('/retrieve', methods=['GET', 'POST'])
 def retrieve():
+    if request.method == 'POST':
+        if request.form.get('Restore') == 'Restore':
+            Generate.esrgan()
     return render_template('retrieve.html')
 @app.route('/login')
 def login():
@@ -29,7 +33,4 @@ def login():
 def signup():
     return render_template('signup.html')
 if __name__ == "__main__":
-    autoencoder = RRDBNet()
-    autoencoder.compile(optimizer = 'adadelta', loss = 'mean_squared_error')
-    autoencoder.load_weights('weight/weights')
     app.run(debug=True)
