@@ -1,13 +1,21 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
+from flask_dropzone import Dropzone
+import os
 
 app = Flask(__name__)
+dropzone = Dropzone(app)
 
+@app.route('/store', methods=['GET', 'POST'])
+def upload():
+
+    if request.method == 'POST':
+        f = request.files.get('file')
+        f.save(os.path.join('Storage', f.filename))
+
+    return render_template('Store.html')
 @app.route('/')
 def index():
     return render_template('index.html')
-@app.route('/store')
-def store():
-    return render_template('Store.html')
 @app.route('/retrieve')
 def retrieve():
     return render_template('retrieve.html')

@@ -2,14 +2,18 @@
 
 {% block head %}
 <title>Store</title>
+{{ dropzone.load_css() }}
+{{ dropzone.style('font-size:24px;border: 2px dashed #0087F7;background-color: #222831;color:#EEEEEE;background-image: url("../static/image/image.png");background-size: 80px;background-repeat: no-repeat;background-position: center; margin: 10%; min-height: 400px;') }}
 {% endblock %}
 
 {% block body %}
 <div id="store_panel">
     <div id="store_button">
         <input type="submit" value="Store"/>
-        <input type="submit" value="Browse"/>
     </div>
-    <div id="store_dialog"><img style="filter: invert(1);height: 80xp; width: 80px;" src="../static/image/image.svg"><br>Drag & Drop Image</div>
+    {{ dropzone.create(action='upload') }}
+    {{ dropzone.load_js() }}
+    {{ dropzone.config() }}
+    <!--<div id="store_dialog"><img style="filter: invert(1);height: 80xp; width: 80px;" src="../static/image/image.svg"><br>Drag & Drop Image</div>-->
 </div>
 {% endblock %}
