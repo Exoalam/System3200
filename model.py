@@ -5,7 +5,6 @@ from tensorflow.keras.models import Model
 from tensorflow.keras import regularizers
 import matplotlib.pyplot as plt
 from scipy import ndimage, misc
-from matplotlib import pyplot
 import tensorflow as tf
 from tensorflow.keras import layers
 import numpy as np
