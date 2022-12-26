@@ -14,10 +14,10 @@ class Generate:
         autoencoder.load_weights('weight/weights')
         for root, dirnames, filenames in os.walk("Storage"):
             for filename in filenames:
-                if re.search("\.(jpg|jpeg|JPEG|png|bmp|tiff)$", filename):
+                if re.search("\.(jpg|jpeg|JPEG|png|bmp|tiff|PNG)$", filename):
                     filepath = os.path.join(root, filename)
                     image = pyplot.imread(filepath)
-                    image = resize(image, (256, 256))
+                    image = resize(image, (512, 512))
                     data = []
                     data.append(image)
                     data = np.array(data)

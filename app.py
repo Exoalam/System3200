@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for, request
 from flask_dropzone import Dropzone
 from model import RRDBNet
 from downscale import Downscale
-from Generate import Generate
+from use_model import Generator
 import os
 
 app = Flask(__name__)
@@ -24,7 +24,7 @@ def index():
 def retrieve():
     if request.method == 'POST':
         if request.form.get('Restore') == 'Restore':
-            Generate.esrgan()
+            Generator.output()
     return render_template('retrieve.html')
 @app.route('/login')
 def login():

@@ -1,0 +1,4 @@
+numpy
+tensorflow==2.7.0
+tfa-nightly
+opencv-python

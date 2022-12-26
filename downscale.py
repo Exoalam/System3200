@@ -10,7 +10,5 @@ class Downscale():
                 if re.search("\.(jpg|jpeg|JPEG|png|bmp|tiff)$", filename):
                     filepath = os.path.join(root, filename)
                     image = pyplot.imread(filepath)
-                    if len(image.shape) > 2:
-                        image_resized = resize(image, (512, 512))
-                        dwn1 = resize(image_resized, (256, 256))
-                        pyplot.imsave('Storage/' + filename,dwn1)
+                    image_resized = resize(image, (512, 512))
+                    pyplot.imsave('Storage/' + filename, image_resized)
