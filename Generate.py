@@ -19,4 +19,4 @@ class Generate:
         data = np.array(data)
         data = np.clip(autoencoder.predict(data), 0.0, 1.0)
         head, tail = os.path.split(images)
-        pyplot.imsave('Output/' + tail,resize(data[0], (360, 640)))
+        pyplot.imsave('Output/' + tail,resize(data[0], (1080, 1920)))

@@ -33,6 +33,8 @@ def retrieve():
                            
         if request.form.get('Download') == 'Download':
             path = select[0]
+            head, tail = os.path.split(path)
+            tail = "Output/" + tail
             select.clear
             return send_file(path, as_attachment=True)        
     return render_template('retrieve.html', toPass=filepath)
