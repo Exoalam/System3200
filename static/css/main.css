@@ -167,8 +167,15 @@ body {
     flex-direction: row;
 }
 
-
-
+#wanttoret {
+    all: unset;
+    color: #EEEEEE;
+    font-size: 18px;
+}
+#retrieve_button {
+    display: flex;
+    flex-direction: row;
+}
 #retrieve_button input{
     all: unset;
     margin-left: 310px;

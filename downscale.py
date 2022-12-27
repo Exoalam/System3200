@@ -1,5 +1,6 @@
 import re
 import os
+import json
 from PIL import Image
 from matplotlib import pyplot
 from skimage.transform import resize, rescale
@@ -12,3 +13,5 @@ class Downscale():
                     image = pyplot.imread(filepath)
                     image_resized = resize(image, (512, 512))
                     pyplot.imsave('Storage/' + filename, image_resized)
+
+
