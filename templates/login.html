@@ -5,13 +5,13 @@
 {% endblock %}
 
 {% block body %}
-<div id="login_panel">
+<form method="post" action="/login" id="login_panel">
     <label style="margin-left: auto;margin-right: auto;margin-top: 150px; margin-bottom: 100px;color: #00c3ff; font-size: 32px; font-weight: bold;">LOGIN</label>
-    <div id="login_user" class="textfield"><input type="text" placeholder="Type Your Email"></div>
-    <div id="login_pass" class="textfield"><input type="text" placeholder="Type Your Password"></div>
+    <div id="login_user" class="textfield"><input type="text" id="user" name="user" placeholder="Type Your Email"></div>
+    <div id="login_pass" class="textfield"><input type="text" id="password" placeholder="Type Your Password"></div>
     <div id="login_button">
         <input type="submit" value="Login"/>
         <a href="/signup">Signup</a>
     </div>
-</div>
+</form>
 {% endblock %}
